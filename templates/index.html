@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Filter App</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Welcome to the Movie Filter App</h1>
+        <form action="/upload" method="post" enctype="multipart/form-data" class="upload-form">
+            <label for="file" class="file-label">Upload a Movie File:</label>
+            <input type="file" name="file" id="file" class="file-input">
+            
+            <label for="rating" class="rating-label">Select Your Rating:</label>
+            <select name="rating" id="rating" class="rating-select">
+                <option value="" disabled selected>Choose a rating</option>
+                <option value="G">G</option>
+                <option value="PG">PG</option>
+                <option value="PG-13">PG-13</option>
+                <option value="R">R</option>
+                <option value="NC-17">NC-17</option>
+            </select>
+            
+            <button type="submit" class="submit-button">Process Movie</button>
+        </form>
+    </div>
+</body>
+</html>
