@@ -1,1 +1,1 @@
-web: python app.py # Generates the Procfile
+web: gunicorn app:app
